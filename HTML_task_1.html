@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Jupyter Markdown Showcase</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f9f9f9;
+            margin: 40px;
+        }
+        
+        .markdown-heading {
+            color: #2a4d69;
+        }
+        
+        .inline-code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        
+        .code-block {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 5px solid #ccc;
+            font-family: monospace;
+            white-space: pre;
+            overflow-x: auto;
+        }
+        
+        .markdown-list {
+            margin-left: 30px;
+        }
+        
+        .markdown-blockquote {
+            border-left: 4px solid #888;
+            padding-left: 12px;
+            color: #555;
+            font-style: italic;
+            background: #f0f0f0;
+        }
+        
+        .markdown-link {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        
+        .markdown-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        
+        .markdown-table th,
+        .markdown-table td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+        
+        .markdown-hr {
+            border-top: 2px solid #aaa;
+            margin: 30px 0;
+        }
+        
+        .markdown-image {
+            width: 250px;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+        
+        .marquee-text,
+        .marquee-image {
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .marquee-text {
+            color: #0c5460;
+            font-weight: bold;
+        }
+        
+        marquee img {
+            height: 100px;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="headings">
+        <h1 class="markdown-heading">Hello! This is HTML Heading 1</h1>
+        <h2 class="markdown-heading">Hello! This is HTML Heading 2</h2>
+        <h3 class="markdown-heading">Hello! This is HTML Heading 3</h3>
+    </div>
+
+    <div id="emphasis">
+        <p><strong>The Text Is Bold</strong></p>
+        <p><em>The Text Is Italic</em></p>
+        <p><strong><em>The Text Is Bold and Italic</em></strong></p>
+    </div>
+
+    <div id="lists">
+        <h3 class="markdown-heading">Unordered List</h3>
+        <ul class="markdown-list">
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Cherry</li>
+        </ul>
+
+        <h3 class="markdown-heading">Ordered List</h3>
+        <ol class="markdown-list">
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ol>
+    </div>
+
+    <div id="code">
+        <p>This is <code class="inline-code">inline code</code>.</p>
+
+        <h3 class="markdown-heading">Code Block</h3>
+        <pre class="code-block"><code>def greet(name):
+    print("Hello", name)</code></pre>
+    </div>
+
+    <div id="blockquote">
+        <h3 class="markdown-heading">Blockquote</h3>
+        <blockquote class="markdown-blockquote">
+            "This is a blockquote — commonly used for quotes or highlights in Jupyter."
+        </blockquote>
+    </div>
+
+    <div id="links-images">
+        <h3 class="markdown-heading">Link</h3>
+        <p><a href="https://jupyter.org" class="markdown-link" target="_blank">Visit Jupyter Official Site</a></p>
+
+        <h3 class="markdown-heading">Image Example</h3>
+        <p>Below is a local image rendered like Markdown:</p>
+        <img src="D:\da 17\power-bi-vector-logo-2022.png" alt="PowerBi Logo" class="markdown-image" />
+    </div>
+
+    <div id="table">
+        <h3 class="markdown-heading">Table</h3>
+        <table class="markdown-table">
+            <tr>
+                <th>Language</th>
+                <th>Use</th>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Data Analysis</td>
+            </tr>
+            <tr>
+                <td>SQL</td>
+                <td>Databases</td>
+            </tr>
+            <tr>
+                <td>PowerBI</td>
+                <td>Data Cleaning & Report Making</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="horizontal-line">
+        <h3 class="markdown-heading">Horizontal Rule</h3>
+        <div class="markdown-hr"></div>
+    </div>
+
+    <div id="marquee-section">
+        <h3 class="markdown-heading">Moving Text</h3>
+        <marquee class="marquee-text" behavior="scroll" direction="left">
+            🚀 Welcome to the Markdown Showcase in HTML! ✨ Powered by Jupyter Style ✨
+        </marquee>
+
+        <h3 class="markdown-heading">Moving Images</h3>
+        <marquee class="marquee-image" behavior="alternate" direction="right">
+            <img src="images/jupyter-logo.svg" alt="Jupyter Moving Logo" />
+            <img src="images/jupyter-logo.svg" alt="Jupyter Moving Logo 2" />
+        </marquee>
+    </div>
+
+</body>
+
+</html>
